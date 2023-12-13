@@ -86,6 +86,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   position: sticky;
   top: 0;
+  z-index: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -116,6 +117,9 @@ body {
   font-size: 0.8rem;
   margin: 20px 10px;
 }
+.top-content li:hover {
+  color: white;
+}
 .underline::after {
 }
 
@@ -127,6 +131,7 @@ h3 {
 h2 {
   font-size: 1.5rem;
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 h3 {
   font-size: 1rem;
@@ -134,6 +139,35 @@ h3 {
 }
 .artist {
   font-size: 12px;
+}
+.album {
+  position: relative;
+  width: 100%;
+}
+.play-cover {
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col1-6 .play-cover > i {
+  display: none;
+}
+.col1-6:hover .play-cover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.col1-6:hover .play-cover > i {
+  display: inline;
+}
+.round {
+  border-radius: 50%;
 }
 /* PLAYER */
 #app-player {
