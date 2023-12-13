@@ -9,7 +9,10 @@
 }
 
 @media screen and (max-width: 576px) {
+  :root {
+    --sidebar-width: 50px;
+  }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 400px) {
 }
