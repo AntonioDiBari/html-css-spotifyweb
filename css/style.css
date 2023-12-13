@@ -24,6 +24,8 @@ a {
   --body-bg-color: #141922;
 
   --player-height: 90px;
+  --sidebar-width: 230px;
+  --topheader-height: 90px;
 }
 
 /* GENERICS */
@@ -48,4 +50,50 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--body-bg-color);
   color: white;
+}
+
+/* APP-MAIN */
+#app-main {
+  height: calc(100% - var(--player-height));
+  display: flex;
+}
+/* SIDEBAR */
+.sidebar {
+  background-color: var(--sidebar-bg-color);
+  width: var(--sidebar-width);
+}
+
+/* APP-TOP */
+.app-top {
+  width: calc(100% - var(--sidebar-width));
+  overflow: auto;
+}
+/* TOP-HEADER */
+.top-header {
+  height: var(--topheader-height);
+  background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.upgrade {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 10px 40px;
+  font-size: 0.8rem;
+  margin-right: 10px;
+}
+.upgrade:hover {
+  font-size: 0.9rem;
+}
+
+/* TOP-CONTENT */
+.top-content {
+}
+/* PLAYER */
+#app-player {
+  height: var(--player-height);
+  background-color: var(--player-bg-color);
 }

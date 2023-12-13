@@ -2,8 +2,14 @@
 /* DESKTOP FIRST  */
 /* **************************** */
 
+@media screen and (max-width: 992px) {
+}
+
 @media screen and (max-width: 768px) {
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 420px) {
 }
