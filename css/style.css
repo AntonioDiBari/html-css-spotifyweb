@@ -73,12 +73,6 @@ body {
   font-size: 0.8rem;
 }
 
-.sidebar .nav-user {
-  height: 50px;
-  width: 100%;
-  margin-top: auto;
-  background-color: white;
-}
 .nav-logo {
   padding: 1rem;
 }
@@ -119,11 +113,87 @@ body {
 .nav-playlist {
   padding: 0 1rem;
 }
+
+.add-playlist {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.add-playlist:hover .add-left {
+  background-color: white;
+}
+.add-playlist:hover .add-right {
+  color: white;
+}
+
+.add-left {
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 40px;
+  aspect-ratio: 1;
+  line-height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  color: black;
+  font-size: 1.3rem;
+}
+.add-right {
+  margin-left: 10px;
+}
+
+.playlist ul li {
+  margin-bottom: 1.3rem;
+}
+.playlist ul li:hover {
+  color: white;
+}
+
+.sidebar .nav-user {
+  margin-top: auto;
+  padding: 20px 20px 0 20px;
+}
+.install,
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.install {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.install:hover {
+  color: white;
+}
+.install-logo {
+  width: 15px;
+  height: 100%;
+}
+.profile {
+  padding-top: 10px;
+}
+.pic {
+  width: 25px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.pic img {
+  width: 100%;
+  height: 100%;
+}
+.name {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
 /* APP-TOP */
 .app-top {
   width: calc(100% - var(--sidebar-width));
   overflow: auto;
 }
+
 /* TOP-HEADER */
 .top-header {
   height: var(--topheader-height);
@@ -184,6 +254,7 @@ h3 {
 }
 h4 {
   font-size: 0.9rem;
+  margin-bottom: 10px;
 }
 .artist {
   font-size: 12px;
