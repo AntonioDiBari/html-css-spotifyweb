@@ -3,14 +3,36 @@
 /* **************************** */
 
 @media screen and (max-width: 992px) {
+  /* TOP-CONTENT */
+  .top-content .col1-6 {
+    width: calc(100% / 4 - 15px);
+  }
 }
 
 @media screen and (max-width: 768px) {
+  /* TOP-CONTENT */
+  .top-content .col1-6 {
+    width: calc(100% / 2 - 15px);
+  }
 }
 
 @media screen and (max-width: 576px) {
   :root {
     --sidebar-width: 50px;
+  }
+  /* SIDEBAR */
+  .d-none {
+    display: none;
+  }
+  .d-block {
+    display: block;
+  }
+  .sidebar {
+    align-items: center;
+    padding-top: 10px;
+  }
+  .nav-logo {
+    padding: 0;
   }
 }
 
