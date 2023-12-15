@@ -24,7 +24,7 @@
   </head>
   <body>
     <main class="webapp">
-      <div id="app-main">
+      <div class="app-main">
         <nav class="sidebar">
           <div class="nav-logo">
             <img src="./img/logo.svg" alt="" class="logo d-none" />
@@ -58,17 +58,17 @@
               <div class="add-left"><i class="fa-solid fa-plus"></i></div>
               <div class="add-right">Crea Playlist</div>
             </div>
-            <div class="playlist">
-              <ul>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-              </ul>
-            </div>
+          </div>
+          <div class="playlist d-none">
+            <ul>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+            </ul>
           </div>
           <div class="nav-user">
             <div class="install">
@@ -216,7 +216,36 @@
           </div>
         </section>
       </div>
-      <footer id="app-player"></footer>
+      <footer id="app-player">
+        <div class="player-song">
+          <div class="album"><img src="./img/sinister.jpeg" alt="" /></div>
+          <div class="song-info">
+            <h5><a href="">Sinister</a></h5>
+            <div class="song-name"><a href="">Brano Nome</a></div>
+          </div>
+          <div class="song-ico">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-folder"></i>
+          </div>
+        </div>
+        <div class="player-controller">
+          <div class="player-controller-ico">
+            <i class="fa-solid fa-shuffle"></i>
+            <i class="fa-solid fa-backward-step"></i>
+            <i class="fa-regular fa-circle-play play"></i>
+            <i class="fa-solid fa-forward-step"></i>
+            <i class="fa-solid fa-rotate-right"></i>
+          </div>
+          <div class="player-controller-time">
+            <div class="time">0.25</div>
+            <div class="progress-bar">
+              <div class="playing-bar"></div>
+            </div>
+            <div class="time">4.35</div>
+          </div>
+        </div>
+        <div class="player-settings"></div>
+      </footer>
     </main>
   </body>
 </html>
