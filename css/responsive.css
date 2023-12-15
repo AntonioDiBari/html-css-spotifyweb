@@ -7,12 +7,18 @@
   .top-content .col1-6 {
     width: calc(100% / 4 - 15px);
   }
+  .player-controller-ico {
+    gap: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   /* TOP-CONTENT */
   .top-content .col1-6 {
     width: calc(100% / 2 - 15px);
+  }
+  .player-controller-ico {
+    gap: 10px;
   }
 }
 
@@ -47,6 +53,15 @@
   }
   .install {
     justify-content: center;
+  }
+  .player-controller-ico {
+    font-size: 0.8rem;
+  }
+  .player-settings {
+    gap: 10px;
+  }
+  .album-song {
+    display: none;
   }
 }
 

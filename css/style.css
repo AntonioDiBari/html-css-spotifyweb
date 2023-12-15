@@ -237,7 +237,8 @@ body {
   margin: 20px 10px;
 }
 .top-content li:hover,
-.song-ico i:hover {
+.song-ico i:hover,
+.player-settings i:hover {
   color: white;
 }
 .underline::after {
@@ -310,7 +311,7 @@ h4 {
   gap: 10px;
 }
 
-.player-song .album {
+.player-song .album-song {
   width: 45px;
   min-width: 45px;
   aspect-ratio: 1;
@@ -336,6 +337,7 @@ h5 {
 
 .player-controller {
   width: 40%;
+  min-width: 200px;
 }
 .player-controller-ico {
   display: flex;
@@ -389,4 +391,10 @@ h5 {
 }
 .progress-bar:hover .playing-bar {
   background-color: greenyellow;
+}
+.player-settings {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 230px;
 }
