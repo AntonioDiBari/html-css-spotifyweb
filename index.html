@@ -24,8 +24,11 @@
   </head>
   <body>
     <main class="webapp">
+      <!-- CONTAINER PER WEBAPP -->
       <div class="app-main">
+        <!-- PARTE SUPERIORE DELLA WEBAPP -->
         <nav class="sidebar">
+          <!-- SIDEBAR CON SEZIONI DI VARIA UTILITA' -->
           <div class="nav-logo">
             <img src="./img/logo.svg" alt="" class="logo d-none" />
             <img src="./img/logo-small.svg" alt="" class="logo-small d-block" />
@@ -71,6 +74,7 @@
             </ul>
           </div>
           <div class="nav-user">
+            <!-- SEZIONE USER -->
             <div class="install">
               <div class="install-logo">
                 <img src="./img/download.svg" alt="" />
@@ -84,13 +88,20 @@
           </div>
         </nav>
         <section class="app-top">
+          <!-- INIZIO SEZIONE CENTRALE -->
           <div class="top-header">
             <div class="upgrade">EFFETTUA L'UPGRADE</div>
           </div>
           <div class="top-content">
             <div class="titles">
+              <!-- LISTA OPZIONI ASCOLTO -->
               <ul>
-                <li class="underline">IN EVIDENZA</li>
+                <li>
+                  <div class="underline">
+                    IN EVIDENZA
+                    <div class="line"></div>
+                  </div>
+                </li>
                 <li>PODCAST</li>
                 <li>CLASSIFICHE</li>
                 <li>GENERI E MOOD</li>
@@ -99,6 +110,7 @@
               </ul>
             </div>
             <h2>Recently played</h2>
+            <!-- SEZIONI DI RACOMMANDED CON GRID RESPONSIVE E HOVER SU PLAY -->
             <div class="row">
               <div class="col1-6">
                 <div class="album">
@@ -215,9 +227,12 @@
             </div>
           </div>
         </section>
+        <!-- FINE SEZIONE CENTRALE -->
       </div>
       <footer id="app-player">
+        <!-- FOOTER PLAYER -->
         <div class="player-song">
+          <!-- INFO BRANO -->
           <div class="album-song"><img src="./img/sinister.jpeg" alt="" /></div>
           <div class="song-info">
             <h5><a href="">Sinister</a></h5>
@@ -229,6 +244,7 @@
           </div>
         </div>
         <div class="player-controller">
+          <!-- CONTROLLI PER LA RIPRIDUZIONE DI BRANO/I CON PROGRESS BAR -->
           <div class="player-controller-ico">
             <i class="fa-solid fa-shuffle"></i>
             <i class="fa-solid fa-backward-step"></i>
@@ -237,6 +253,7 @@
             <i class="fa-solid fa-rotate-right"></i>
           </div>
           <div class="player-controller-time">
+            <!-- CONTROLLI PER IL VOLUME -->
             <div class="time">0.25</div>
             <div class="progress-bar">
               <div class="playing-bar"></div>
